@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<nav>
+  <div class="nav-center">
+    <!--nav header-->
+    <div class="nav-header">
+      <a href="#home">
+      <img src="./logo.jpg" class="logo" alt="logo"></a>
+      <button class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- links -->
+    <ul class="links">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#menu">Menu</a>
+      </li>
+      <li>
+        <a href="#reviews">Reviews</a>
+      </li>
+      <li>
+        <a href="#gallery">Gallery</a>
+      </li>
+      <li>
+        <a href="#questions">Questions</a>
+      </li>
+    </ul>
+    <!-- social media -->
+    <ul class="social-icons">
+      <li>
+        <a href="https://ar-ar.facebook.com">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com">
+          <i class="fab fa-behance"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.twitter.com">
+          <i class="fab fa-sketch"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--hero-->
+<header class="hero" id="home">
+  <div class="banner">
+    <h1>Modal Project</h1>
+    <button class="btn modal-btn">
+      Open Modal
+    </button>
+  </div>
+</header>
+<!--end hero-->
+<!--modal-->
+<div class="modal-overlay">
+  <div class="modal-container">
+    <h3>Modal Content</h3>
+    <button class="close-btn">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+<!--Menu-->
+<section class="menu" id="menu">
+  <!--title-->
+  <div class="title">
+    <h2>Our Menu</h2>
+    <div class="underline"></div>
+  </div>
+  <!--filter buttons-->
+  <div class="btn-container">
+   <!-- <button class="filter-btn" data-id="all" type="button">All</button>
+    <button class="filter-btn" data-id="breakfast" type="button">Breakfast</button>
+    <button class="filter-btn" data-id="lunch" type="button">Lunch</button>
+    <button class="filter-btn" data-id="shakes" type="button">Shakes</button>
+-->
+  </div>
+  <!--menu items-->
+  <div class="section-center">
+    <!--single item-->
+   <!-- <article class="menu-item">
+      <img src="./menu-item.jpeg" class="photo" alt="menu item">
+      <div class="item-info">
+        <header>
+        <h4>Buttermilk Pancakes</h4>
+        <h4 class="price">$15</h4>
+      </header>
+      <p class="item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam reprehenderit odio facere id nihil delectus non maiores! Quas non explicabo, iste minima in, architecto eligendi corrupti adipisci nisi accusantium facilis?</p>
+      </div>
+    </article>-->
+    <!--end of single item-->
+
+  </div>
+</section>
+<!--header-->
+<header class="video-header">
+  <video class="video-container"  muted autoplay loop>
+    <source src="./video.mp4" type="video/mp4">
+  </video>
+  <h1 class="video-text">Video Content</h1>
+<!--video switch-->
+<button class="switch-btn">
+<span>Play</span>
+<span> Pause</span>
+<span class="switch"></span>
+</button>
+</header>
+<!--review-->
+<main>
+  <section class="container" id="reviews">
+    <!--title-->
+    <div class="title">
+      <h2>Our Reviews</h2>
+      <div class="underline"></div>
+    </div>
+    <!--review-->
+    <article class="review" >
+      <div class="img-container">
+        <img src="./person-1.jpeg" id="person-img" alt="">
+      </div>
+      <h4 id="author">Sara Jones</h4>
+      <p id="job">UX UI Designer</p>
+      <p id="info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sed numquam aperiam placeat, voluptatibus quaerat molestias exercitationem mollitia quos sint quibusdam minus accusamus? Impedit cupiditate dignissimos repellat rerum natus quasi.
+      </p>
+      <!--prev / next buttons-->
+      <div class="button-container">
+        <button class="prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <!--random button-->
+      <button class="random-btn">Suprise Me</button>
+    </article>
+  </section>
+</main>
+<hr />
+ <!--Start Gallery-->
+ <div class="gallery" id="gallery">
+  <div class="gall-title">
+  <h2>Gallery</h2>
+  <div class="underline"></div>
+</div>
+  <div class="gall-container">
+      <div class="gall-box">
+          <div class="image-gall">
+              <img src="images/gallery/gall1.png">
+          </div>
+      </div>
+      <div class="gall-box">
+          <div class="image-gall">
+              <img src="images/gallery/gall2.png">
+          </div>
+      </div>
+      <div class="gall-box">
+          <div class="image-gall">
+              <img src="images/gallery/gall3.png">
+          </div>
+      </div>
+      <div class="gall-box">
+          <div class="image-gall">
+              <img src="images/gallery/gall4.png">
+          </div>
+      </div>
+      <div class="gall-box">
+          <div class="image-gall">
+              <img src="images/gallery/gall5.png">
+          </div>
+      </div>
+      <div class="gall-box">
+          <div class="image-gall">
+              <img src="images/gallery/gall6.png">
+          </div>
+      </div>
+  </div>
+</div>
+<!--End Gallery-->
+<hr />
+
+
+
+<!--Questions-->
+<section class="questions" id="questions">
+  <!--title-->
+  <div class="title-question">
+    <h2>General Questions</h2>
+    <div class="underline"></div>
+  </div>
+  <!--questions-->
+  <div class="question-section-center">
+    <!--single question-->
+<article class="question">
+  <!--question title-->
+  <div class="question-title">
+  <p>Do you accept all major credit cards?</p>
+  <button type="button" class="question-btn">
+    <span class="plus-icon">
+      <i class="far fa-plus-square"></i>
+    </span>
+    <span class="minus-icon">
+      <i class="far fa-minus-square"></i>
+    </span>
+  </button>
+</div>
+<!--question text-->
+<div class="question-text">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi, reprehenderit, praesentium doloremque ea cupiditate eos, ullam culpa at aperiam itaque aliquam nostrum. Nihil saepe nam modi architecto, quidem odio?</p>
+</div>
+</article>
+    <!-- end single question-->
+    <!--single question-->
+<article class="question">
+  <!--question title-->
+  <div class="question-title">
+  <p>Do you support local farmers?</p>
+  <button type="button" class="question-btn">
+    <span class="plus-icon">
+      <i class="far fa-plus-square"></i>
+    </span>
+    <span class="minus-icon">
+      <i class="far fa-minus-square"></i>
+    </span>
+  </button>
+</div>
+<!--question text-->
+<div class="question-text">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi, reprehenderit, praesentium doloremque ea cupiditate eos, ullam culpa at aperiam itaque aliquam nostrum. Nihil saepe nam modi architecto, quidem odio?</p>
+</div>
+</article>
+    <!-- end single question-->
+    <!--single question-->
+<article class="question">
+  <!--question title-->
+  <div class="question-title">
+  <p>Do you use organic ingredients?</p>
+  <button type="button" class="question-btn">
+    <span class="plus-icon">
+      <i class="far fa-plus-square"></i>
+    </span>
+    <span class="minus-icon">
+      <i class="far fa-minus-square"></i>
+    </span>
+  </button>
+</div>
+<!--question text-->
+<div class="question-text">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi, reprehenderit, praesentium doloremque ea cupiditate eos, ullam culpa at aperiam itaque aliquam nostrum. Nihil saepe nam modi architecto, quidem odio?</p>
+</div>
+</article>
+    <!-- end single question-->
+
+
+
+
+
+  </div>
+</section>
+<!--Start Footer-->
+<div class="footer">
+  <div class="footer-container">
+      <div class="footer-box">
+          <h3>Raghad</h3>
+          <ul class="footer-social">
+              <li>
+                  <a href="https://ar-ar.facebook.com/" class="facebook">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.twitter.com" class="twitter">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.youtube.com" class="youtube">
+                      <i class="fab fa-youtube"></i> </a>
+              </li>
+          </ul>
+          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro doloremque inventore
+              omnis labore, voluptatem saepe vero quas sit commodi possimus in officia voluptatum sed iusto
+              accusantium eaque minus temporibus quos?</p>
+      </div>
+      <div class="footer-box">
+          <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#reviews">Reviews</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#questions">Questions</a></li>
+          </ul>
+      </div>
+      <div class="footer-box">
+          <div class="line">
+              <i class="fas fa-map-marker-alt fa-fw"></i>
+              <div class="info">Saudi Arabia, Jeddah</div>
+          </div>
+          <div class="line">
+              <i class="far fa-clock fa-fw"></i>
+              <div class="info">Business Hours: From 10:00 To 18:00</div>
+          </div>
+          <div class="line">
+              <i class="fas fa-phone-volume fa-fw"></i>
+              <div class="info">
+                  <span>+966543597593</span>
+                  <span>+966565267567</span>
+              </div>
+          </div>
+      </div>
+      <div class="footer-box footer-gallery">
+          <img src="images/gallery/gall1.png" alt="" />
+          <img src="images/gallery/gall2.png" alt="" />
+          <img src="images/gallery/gall3.png" alt="" />
+          <img src="images/gallery/gall4.png" alt="" />
+          <img src="images/gallery/gall5.png" alt="" />
+          <img src="images/gallery/gall6.png" alt="" />
+      </div>
+  </div>
+  <p class="copyright">Made With Love &lt; RAGHAD 2023 &#169</p>
+</div>
+<!--End Footer-->
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
